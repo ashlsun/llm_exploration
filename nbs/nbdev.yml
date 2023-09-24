@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "llm_exploration"
+  site-url: "https://ashlsun.github.io/llm_exploration"
+  description: "a new blog with nbdev"
+  repo-branch: main
+  repo-url: "https://github.com/ashlsun/llm_exploration"
