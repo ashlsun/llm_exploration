@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "core",
+    "section": "",
+    "text": "source\n\nfoo\n\n foo ()"
+  },
+  {
+    "objectID": "blog/posts/2023-09-24-first-post/index.html",
+    "href": "blog/posts/2023-09-24-first-post/index.html",
+    "title": "my first blog post!",
+    "section": "",
+    "text": "here I will write about all the cool and fun things im learning about llms\n\nprint(\"Hello world!\")"
+  },
+  {
+    "objectID": "blog/posts/2023-09-24-first-post/index.html#hi-this-is-my-first-post",
+    "href": "blog/posts/2023-09-24-first-post/index.html#hi-this-is-my-first-post",
+    "title": "my first blog post!",
+    "section": "",
+    "text": "here I will write about all the cool and fun things im learning about llms\n\nprint(\"Hello world!\")"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "ashley’s blog!",
+    "section": "",
+    "text": "my first blog post!\n\n\n\n\n\n\n\n\n\n\n\n\nSep 24, 2023\n\n\nashley\n\n\n\n\n\n\nNo matching items"
+  }
+]
