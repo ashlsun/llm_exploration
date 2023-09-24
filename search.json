@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "core.html",
-    "href": "core.html",
-    "title": "core",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "welcome to my llm exploration site",
     "section": "",
-    "text": "source\n\nfoo\n\n foo ()"
+    "text": "im learning about small large language models - im following the paradigm of literate programming and exploratory programming"
   },
   {
     "objectID": "blog/posts/2023-09-24-first-post/index.html",
@@ -19,6 +19,13 @@
     "title": "my first blog post!",
     "section": "",
     "text": "here I will write about all the cool and fun things im learning about llms\n\nprint(\"Hello world!\")"
+  },
+  {
+    "objectID": "00_core.html",
+    "href": "00_core.html",
+    "title": "core",
+    "section": "",
+    "text": "Fill in a module description here\n\n::: {.cell 0=‘h’ 1=‘i’ 2=‘d’ 3=‘e’}\nfrom nbdev.showdoc import *\n:::\n::: {.cell 0=‘e’ 1=‘x’ 2=‘p’ 3=‘o’ 4=‘r’ 5=‘t’}\ndef foo(): pass\n\ndef my_first_function():\n    \"\"\"Simple greeter\"\"\"\n    print(\"Hello, world!\")\n:::\n::: {.cell 0=‘h’ 1=‘i’ 2=‘d’ 3=‘e’}\nimport nbdev; nbdev.nbdev_export()\n:::"
   },
   {
     "objectID": "blog/index.html",
