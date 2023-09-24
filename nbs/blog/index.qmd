@@ -1,6 +1,6 @@
 ---
-title: Fractal-U LLM Blog
-subtitle: Posts and notes for the course
+title: ashley's blog!
+subtitle: notes to my future self
 listing:
   sort: "date desc"
   contents: "posts"
