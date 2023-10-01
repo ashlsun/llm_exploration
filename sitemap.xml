@@ -2,18 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ashlsun.github.io/llm_exploration/index.html</loc>
-    <lastmod>2023-10-01T13:55:45.163Z</lastmod>
+    <lastmod>2023-10-01T14:13:55.840Z</lastmod>
   </url>
   <url>
     <loc>https://ashlsun.github.io/llm_exploration/blog/posts/2023-09-24-first-post/index.html</loc>
-    <lastmod>2023-10-01T13:55:43.868Z</lastmod>
+    <lastmod>2023-10-01T14:13:54.772Z</lastmod>
   </url>
   <url>
     <loc>https://ashlsun.github.io/llm_exploration/00_core.html</loc>
-    <lastmod>2023-10-01T13:55:42.516Z</lastmod>
+    <lastmod>2023-10-01T14:13:53.843Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ashlsun.github.io/llm_exploration/blog/posts/2023-09-29-environment/index.html</loc>
+    <lastmod>2023-10-01T14:13:54.347Z</lastmod>
   </url>
   <url>
     <loc>https://ashlsun.github.io/llm_exploration/blog/index.html</loc>
-    <lastmod>2023-10-01T13:55:44.645Z</lastmod>
+    <lastmod>2023-10-01T14:13:55.333Z</lastmod>
   </url>
 </urlset>

@@ -28,10 +28,17 @@
     "text": "Fill in a module description here\n\n::: {.cell 0=‘h’ 1=‘i’ 2=‘d’ 3=‘e’}\nfrom nbdev.showdoc import *\n:::\n::: {.cell 0=‘e’ 1=‘x’ 2=‘p’ 3=‘o’ 4=‘r’ 5=‘t’}\ndef foo(): pass\n\ndef my_first_function():\n    \"\"\"Simple greeter\"\"\"\n    print(\"Hello, world!\")\n:::\n::: {.cell 0=‘h’ 1=‘i’ 2=‘d’ 3=‘e’}\nimport nbdev; nbdev.nbdev_export()\n:::"
   },
   {
+    "objectID": "blog/posts/2023-09-29-environment/index.html",
+    "href": "blog/posts/2023-09-29-environment/index.html",
+    "title": "Setting up the environment",
+    "section": "",
+    "text": "First, I cd-ed into lesson_0 in the Fractal_LLM_Course directory, and I followed these steps on the terminal to install mamba.\n\n# check your mac's architecture\narch=$(uname) \necho $arch\n\n# download the appropriate installation script\ncurl -L -O \"https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh\"\n\n# run the Mambaforge installer\nbash Mambaforge-$(uname)-$(uname -m).sh\nThen I created an environment called llm_base by following these steps.\n\n# create the base environment\nmamba env create -f environment.yml\n\n# activate the environment\nmamba activate llm_base\n\n# install the python packages, after activating the env\npython -m pip install -r requirements.txt  \n\n# install the pytorch library\npython -m pip install -r reqs_torch_cpu.txt\nIf I remember correctly, I think I ran into some trouble with the order of the last two lines. I might have tried to install what was in requirements.txt first, but then my terminal complained that torch was not found. So I did pip install torch first and then ran the two lines again."
+  },
+  {
     "objectID": "blog/index.html",
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "my first blog post!\n\n\n\n\n\n\n\n\n\n\n\n\nSep 24, 2023\n\n\nashley\n\n\n\n\n\n\nNo matching items"
+    "text": "Setting up the environment\n\n\n\n\n\n\n\n\n\n\n\n\nSep 29, 2023\n\n\nashley\n\n\n\n\n\n\n  \n\n\n\n\nmy first blog post!\n\n\n\n\n\n\n\n\n\n\n\n\nSep 24, 2023\n\n\nashley\n\n\n\n\n\n\nNo matching items"
   }
 ]

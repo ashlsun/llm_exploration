@@ -10,7 +10,135 @@
 <atom:link href="https://ashlsun.github.io/llm_exploration/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description>a new blog with nbdev</description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Sun, 24 Sep 2023 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 29 Sep 2023 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>Setting up the environment</title>
+  <dc:creator>ashley </dc:creator>
+  <link>https://ashlsun.github.io/llm_exploration/blog/posts/2023-09-29-environment/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>First, I cd-ed into lesson_0 in the Fractal_LLM_Course directory, and I followed these steps on the terminal to install mamba.</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"></span>
+<span id="cb1-2"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># check your mac's architecture</span></span>
+<span id="cb1-3"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">arch</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">$(</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">uname</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">)</span> </span>
+<span id="cb1-4"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">echo</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">$arch</span></span>
+<span id="cb1-5"></span>
+<span id="cb1-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># download the appropriate installation script</span></span>
+<span id="cb1-7"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">curl</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-L</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-O</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">$(</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">uname</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">)</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">-</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">$(</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">uname</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-m</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">)</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">.sh"</span></span>
+<span id="cb1-8"></span>
+<span id="cb1-9"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># run the Mambaforge installer</span></span>
+<span id="cb1-10"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">bash</span> Mambaforge-<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">$(</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">uname</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">)</span>-<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">$(</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">uname</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-m</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">)</span>.sh</span></code></pre></div>
+<p>Then I created an environment called <code>llm_base</code> by following these steps.</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"></span>
+<span id="cb2-2"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># create the base environment</span></span>
+<span id="cb2-3"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">mamba</span> env create <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-f</span> environment.yml</span>
+<span id="cb2-4"></span>
+<span id="cb2-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># activate the environment</span></span>
+<span id="cb2-6"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">mamba</span> activate llm_base</span>
+<span id="cb2-7"></span>
+<span id="cb2-8"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># install the python packages, after activating the env</span></span>
+<span id="cb2-9"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">python</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-m</span> pip install <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-r</span> requirements.txt  </span>
+<span id="cb2-10"></span>
+<span id="cb2-11"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># install the pytorch library</span></span>
+<span id="cb2-12"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">python</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-m</span> pip install <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-r</span> reqs_torch_cpu.txt</span></code></pre></div>
+<p>If I remember correctly, I think I ran into some trouble with the order of the last two lines. I might have tried to install what was in requirements.txt first, but then my terminal complained that torch was not found. So I did pip install torch first and then ran the two lines again.</p>
+
+
+
+ ]]></description>
+  <guid>https://ashlsun.github.io/llm_exploration/blog/posts/2023-09-29-environment/index.html</guid>
+  <pubDate>Fri, 29 Sep 2023 04:00:00 GMT</pubDate>
+</item>
 <item>
   <title>my first blog post!</title>
   <dc:creator>ashley </dc:creator>
