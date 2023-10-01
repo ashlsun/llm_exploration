@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "welcome to my llm exploration site",
+    "title": "Exploring Little* Language Models",
     "section": "",
-    "text": "im learning about small large language models - im following the paradigm of literate programming and exploratory programming"
+    "text": "Welcome to my new blog!\nIn the spirit of literate programming, I’ll be posting about the process of running a fine-tuned LLM (large language model) entirely on my phone, and the things I learn along the way.\nLLMs are notoriously resource-intensive. They’re usually trained and deployed on powerful hardware like GPUs, which are expensive and hard to come by. However, there are tools, techniques, and open-source models out there make it possible to run inference on the average personal device, like your phone!\nI don’t have any prior experience in AI/ML. I’m taking a beginner-friendly class with Chris Kroenke as a part of Fractal University this fall. Let’s figure this out together!\n\n*speaking relatively lol"
   },
   {
     "objectID": "blog/posts/2023-09-24-first-post/index.html",
@@ -30,7 +30,7 @@
   {
     "objectID": "blog/index.html",
     "href": "blog/index.html",
-    "title": "ashley’s blog!",
+    "title": "Blog",
     "section": "",
     "text": "my first blog post!\n\n\n\n\n\n\n\n\n\n\n\n\nSep 24, 2023\n\n\nashley\n\n\n\n\n\n\nNo matching items"
   }
