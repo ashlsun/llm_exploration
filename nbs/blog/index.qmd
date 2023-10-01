@@ -1,6 +1,6 @@
 ---
-title: ashley's blog!
-subtitle: notes to my future self
+title: Blog
+subtitle: Notes on process and learnings
 listing:
   sort: "date desc"
   contents: "posts"

@@ -5,4 +5,9 @@ d = { 'settings': { 'branch': 'main',
                 'doc_host': 'https://ashlsun.github.io',
                 'git_url': 'https://github.com/ashlsun/llm_exploration',
                 'lib_path': 'llm_exploration'},
-  'syms': {'llm_exploration.core': {'llm_exploration.core.foo': ('core.html#foo', 'llm_exploration/core.py')}}}
+  'syms': { 'llm_exploration.basics': { 'llm_exploration.basics.foo': ('core.html#foo', 'llm_exploration/basics.py'),
+                                        'llm_exploration.basics.my_first_function': ( 'core.html#my_first_function',
+                                                                                      'llm_exploration/basics.py')},
+            'llm_exploration.core': { 'llm_exploration.core.foo': ('core.html#foo', 'llm_exploration/core.py'),
+                                      'llm_exploration.core.my_first_function': ( 'core.html#my_first_function',
+                                                                                  'llm_exploration/core.py')}}}
